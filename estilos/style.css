@@ -21,8 +21,12 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--cor2);
+}
+
 header {
-    background-image: linear-gradient(to right top, var(--cor1), var(--cor2));
+    background-color: #73030d;
     color: #f2f2f2;
     text-align: center;
     padding: 20px;
@@ -31,4 +35,42 @@ header {
 header > h1 {
     font-family: var(--fonte1);
     text-transform: uppercase;
+    font-size: clamp(1.3em, 3.5vw, 3em);
+}
+
+main {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.695);
+    color: var(--cor3);
+    border: 1px solid black;
+    margin: 30px auto 0px auto;
+}
+
+section > h2{
+    font-family: var(--fonte1);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+section div.imagens-banda {
+    max-width: 550px;
+    margin: auto;
+}
+
+div.imagens-banda img {
+    width: 100%;
+}
+
+div.imagem-album {
+    
+}
+
+span {
+    width: 200px;
+    display: block;
+}
+
+div.imagem-album img {
+    width: 100%;
 }
