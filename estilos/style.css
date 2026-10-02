@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,68 +11,148 @@
 
 :root {
     --fonte1: "Passion One", sans-serif;
-    --cor1: #73030d;
-    --cor2: #732f3b;
-    --cor3: #f2f2f2;
-    --cor4: #8c8c8c;
-    --cor5: #0d0d0d;  
+    --fonte2: "Permanent Marker", cursive;
+    --cor1: #0c0000;
+    --cor2: #360000;
+    --cor3: #660500;
+    --cor4: #f2f2f2;
+    --cor5: #8c8c8c;
+    --cor6: #0d0d0dd2;  
+    
 }
 
 html, body {
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 
 body {
     background-color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: #73030d;
+    background-color: var(--cor1);
     color: #f2f2f2;
     text-align: center;
     padding: 20px;
 }
 
 header > h1 {
-    font-family: var(--fonte1);
+    font-family: var(--fonte2);
     text-transform: uppercase;
-    font-size: clamp(1.3em, 3.5vw, 3em);
+    font-size: clamp(1.3em, 3.8vw, 3em);
+}
+
+nav#navegacao {
+    background-color: var(--cor1);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav#navegacao > a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 main {
     max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.695);
-    color: var(--cor3);
-    border: 1px solid black;
+    box-sizing: border-box;
+    color: var(--cor4);
     margin: 30px auto 0px auto;
 }
 
-section > h2{
+
+main > h2 {
+    background-color: var(--cor3);
+
     font-family: var(--fonte1);
     text-align: center;
     text-transform: uppercase;
-    padding: 10px;
+    font-size: clamp(0.8em, 4vw, 1.6em);
+
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    margin-top: 30px;
+
 }
 
-section div.imagens-banda {
+#titulo-formacao {
+    margin-top: 0px;
+}
+
+section {
+    background-color: var(--cor6);
+    border: solid var(--cor3);
+    padding: 20px;
+}
+
+section > p {
+    font-size: clamp(0.6em, 2vw, 0.8em);
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+section#formacao > p {
+    margin-top: 25px;
+}
+
+div#imagem-formacao {
     max-width: 550px;
     margin: auto;
 }
 
-div.imagens-banda img {
+div#imagem-formacao img {
     width: 100%;
 }
 
-div.imagem-album {
-    
+figure > .descricao-imagem{
+    color: gray;
+    font-size: clamp(8px, 2vw, 11px);
+    text-align: center;
 }
 
-span {
-    width: 200px;
-    display: block;
+section#explosao > p {
+    margin-bottom: 25px;
 }
 
-div.imagem-album img {
+div#imagem-explosao {
+    max-width: 300px;
+    margin: auto;
+}
+
+div#imagem-explosao img {
+    width: 100%;
+}
+
+section#ativismo > p {
+    margin-bottom: 25px;
+}
+
+div#imagem-ativismo {
+    text-align: center;
+}
+
+
+div#imagem-ativismo span {
+    max-width: 200px;
+}
+
+div#imagem-ativismo img {
+    width: 100%;
+}
+
+section#retorno > p {
+    margin-bottom: 25px;
+}
+
+div#imagem-retorno {
+    width: 500px;
+    margin: auto;
+}
+
+div#imagem-retorno > img {
     width: 100%;
 }
