@@ -73,7 +73,7 @@ main {
     min-width: 200px;
     box-sizing: border-box;
     color: var(--cor4);
-    margin: 30px auto 0px auto;
+    margin: 30px auto 30px auto;
 }
 
 
@@ -162,4 +162,19 @@ div#imagem-retorno {
 
 div#imagem-retorno img {
     width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: clamp(16px, 1.5vw, 1.1em);
+}
+
+footer a {
+    color: #660500;
 }
