@@ -12,12 +12,12 @@
 :root {
     --fonte1: "Passion One", sans-serif;
     --fonte2: "Permanent Marker", cursive;
-    --cor1: #0c0000;
+    --cor1: #0e0000;
     --cor2: #360000;
     --cor3: #660500;
     --cor4: #f2f2f2;
     --cor5: #8c8c8c;
-    --cor6: #0d0d0dd2;  
+    --cor6: #0d0d0dd3;  
     
 }
 
@@ -31,10 +31,11 @@ body {
 }
 
 header {
+    min-width: 200px;
     background-color: var(--cor1);
     color: #f2f2f2;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 header > h1 {
@@ -44,6 +45,7 @@ header > h1 {
 }
 
 nav#navegacao {
+    min-width: 200px;
     background-color: var(--cor1);
     padding: 10px;
     position: sticky;
@@ -52,13 +54,23 @@ nav#navegacao {
 }
 
 nav#navegacao > a {
+    font-size: clamp(0.8em, 2vw, 1.2em);
     color: white;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+}
+nav#navegacao > a:hover {
+    color: lightgray;
+    background-color: rgba(211, 211, 211, 0.045);
+    text-decoration: underline;
 }
 
 main {
     max-width: 800px;
+    min-width: 200px;
     box-sizing: border-box;
     color: var(--cor4);
     margin: 30px auto 0px auto;
@@ -71,7 +83,7 @@ main > h2 {
     font-family: var(--fonte1);
     text-align: center;
     text-transform: uppercase;
-    font-size: clamp(0.8em, 4vw, 1.6em);
+    font-size: clamp(0.9em, 4vw, 1.8em);
 
     border-radius: 5px 5px 0px 0px;
     padding: 5px;
@@ -90,7 +102,7 @@ section {
 }
 
 section > p {
-    font-size: clamp(0.6em, 2vw, 0.8em);
+    font-size: clamp(0.7em, 2vw, 1.1em);
     line-height: 1.5em;
     text-align: justify;
 }
@@ -135,13 +147,8 @@ div#imagem-ativismo {
     text-align: center;
 }
 
-
-div#imagem-ativismo span {
-    max-width: 200px;
-}
-
 div#imagem-ativismo img {
-    width: 100%;
+    width: 40%;
 }
 
 section#retorno > p {
@@ -149,10 +156,10 @@ section#retorno > p {
 }
 
 div#imagem-retorno {
-    width: 500px;
     margin: auto;
+    max-width: 600px;
 }
 
-div#imagem-retorno > img {
+div#imagem-retorno img {
     width: 100%;
 }
